@@ -137,10 +137,7 @@ round(mean(mas.edades$EDAD),1)
 
 Ahora, calculemos la varianza. Tengamos en cuenta que estos parámetros no son equivalentes:
 
-$$
-\frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N} \not\equiv \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}
-$$
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}&space;\not\equiv&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}&space;\not\equiv&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" title="\frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N} \not\equiv \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}" /></a>
 Debemos tener en cuenta que las funciones de los paquetes estadísticos, por defecto, calculan la varianza muestral; por lo tanto, debemos hacer la respectiva corrección $\left(N-1\right) / N$
 
 
