@@ -11,15 +11,11 @@ Si la muestra es representativa, la media y la varianza poblacionales correspond
 
 La función de la media poblacional es:
 
-$$
-\mu = \frac{\sum_{i=1}^{N} X_{i}}{N}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;=&space;\frac{\sum_{i=1}^{N}&space;X_{i}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;=&space;\frac{\sum_{i=1}^{N}&space;X_{i}}{N}" title="\mu = \frac{\sum_{i=1}^{N} X_{i}}{N}" /></a>
 
 y la muestral es:
 
-$$
-\overline{x} = \frac{\sum_{i=1}^{n} x_{i}}{n}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" title="\overline{x} = \frac{\sum_{i=1}^{n} x_{i}}{n}" /></a>
 
 Básicamente, se calculan de la misma manera.
 
@@ -27,15 +23,11 @@ Cuando se calcula la varianza, sí se observa una diferencia sustancial:
 
 Varianza Poblacional:
 
-$$
-\sigma^{2} = \frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" title="\sigma^{2} = \frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N}" /></a>
 
 Varianza Muestral
 
-$$
-S^{2} = \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" title="S^{2} = \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}" /></a>
 
 ### Ejemplo
 
