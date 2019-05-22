@@ -138,7 +138,8 @@ round(mean(mas.edades$EDAD),1)
 Ahora, calculemos la varianza. Tengamos en cuenta que estos parámetros no son equivalentes:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}&space;\not\equiv&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}&space;\not\equiv&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" title="\frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N} \not\equiv \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}" /></a>
-Debemos tener en cuenta que las funciones de los paquetes estadísticos, por defecto, calculan la varianza muestral; por lo tanto, debemos hacer la respectiva corrección $\left(N-1\right) / N$
+
+Debemos tener en cuenta que las funciones de los paquetes estadísticos, por defecto, calculan la varianza muestral; por lo tanto, debemos hacer la respectiva corrección <a href="https://www.codecogs.com/eqnedit.php?latex=\left(N-1\right)&space;/&space;N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left(N-1\right)&space;/&space;N" title="\left(N-1\right) / N" /></a>
 
 
 ```R
@@ -185,29 +186,21 @@ round(var(mas.edades$EDAD),3)
 
 ## Estimación por Máxima Verosimilitud
 
-Consideremos los siguiente: $x_{1}, x_{2}, \dots, x_{n}$ corresponde a una m.a.s. de una población $X$ con una distribución de probabilidad $f(x|\theta)$ siendo $\theta$ un parámetro desconocido. Entonces, la función de verosimilitud se define como:
+Consideremos los siguiente: <a href="https://www.codecogs.com/eqnedit.php?latex=x_{1},&space;x_{2},&space;\dots,&space;x_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{1},&space;x_{2},&space;\dots,&space;x_{n}" title="x_{1}, x_{2}, \dots, x_{n}" /></a> corresponde a una m.a.s. de una población _X_ con una distribución de probabilidad <a href="https://www.codecogs.com/eqnedit.php?latex=f(x|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x|\theta)" title="f(x|\theta)" /></a> siendo <a href="https://www.codecogs.com/eqnedit.php?latex=\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta" title="\theta" /></a> un parámetro desconocido. Entonces, la función de verosimilitud se define como:
 
-$$
-L(\theta) = f \left(x_{1}, x_{2}, \dots, x_{n}|\theta\right)
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=L(\theta)&space;=&space;f&space;\left(x_{1},&space;x_{2},&space;\dots,&space;x_{n}|\theta\right)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L(\theta)&space;=&space;f&space;\left(x_{1},&space;x_{2},&space;\dots,&space;x_{n}|\theta\right)" title="L(\theta) = f \left(x_{1}, x_{2}, \dots, x_{n}|\theta\right)" /></a>
 
 Como cada $x_{i}$ corresponde a una realización de la v.a. $X_{i}$ y sonm independientes e identicamente distribuidas (_idd_) la función de verosimilitud se escribe:
 
-$$
-L(\theta) = \prod_{i=1}^{n}f(x_{i}|\theta)
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=L(\theta)&space;=&space;\prod_{i=1}^{n}f(x_{i}|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L(\theta)&space;=&space;\prod_{i=1}^{n}f(x_{i}|\theta)" title="L(\theta) = \prod_{i=1}^{n}f(x_{i}|\theta)" /></a>
 
 La teoría nos indica que para encontrar el estimador máximo verosímil (_EMV_) para el parámetro poblacional desconocido $\theta$, debemos resolver el siguiente problema de maximización:
 
-$$
-\underset{\widehat{\theta}}{max} \; L(\theta) \text{ o bien } \underset{\widehat{\theta}}{max}\; ln\, L(\theta)
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\underset{\widehat{\theta}}{max}&space;\;&space;L(\theta)&space;\text{&space;o&space;bien&space;}&space;\underset{\widehat{\theta}}{max}\;&space;ln\,&space;L(\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\underset{\widehat{\theta}}{max}&space;\;&space;L(\theta)&space;\text{&space;o&space;bien&space;}&space;\underset{\widehat{\theta}}{max}\;&space;ln\,&space;L(\theta)" title="\underset{\widehat{\theta}}{max} \; L(\theta) \text{ o bien } \underset{\widehat{\theta}}{max}\; ln\, L(\theta)" /></a>
 
 Computacionalmente, el problema consiste en minimizar el negativo de la función de log-verisimilitud ya que $max\;Z = min\;(-Z)$ siendo $Z$ una función cualquiera. Entonces, se tiene:
 
-$$
-- ln\, L(\theta) = - ln \prod_{i=1}^{n} f\left( x_{i}|\theta\right) = - \sum_{i=1}^{n} ln\, f\left( x_{i}|\theta\right)
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=-&space;ln\,&space;L(\theta)&space;=&space;-&space;ln&space;\prod_{i=1}^{n}&space;f\left(&space;x_{i}|\theta\right)&space;=&space;-&space;\sum_{i=1}^{n}&space;ln\,&space;f\left(&space;x_{i}|\theta\right)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-&space;ln\,&space;L(\theta)&space;=&space;-&space;ln&space;\prod_{i=1}^{n}&space;f\left(&space;x_{i}|\theta\right)&space;=&space;-&space;\sum_{i=1}^{n}&space;ln\,&space;f\left(&space;x_{i}|\theta\right)" title="- ln\, L(\theta) = - ln \prod_{i=1}^{n} f\left( x_{i}|\theta\right) = - \sum_{i=1}^{n} ln\, f\left( x_{i}|\theta\right)" /></a>
 
 ## Ejemplo
 
@@ -225,7 +218,7 @@ library(stats4) # para la función mle
 library(bbmle) # para la función mle2
 ```
 
-Ahora construimos el negativo de la función de log-verosimilitud. Esta función, llamada `NegLogLik` en este caso, depende de los parámetros poblacionales desconocidos media y desviación estándar, $\mu$ y $\sigma$ respectivamente:
+Ahora construimos el negativo de la función de log-verosimilitud. Esta función, llamada `NegLogLik` en este caso, depende de los parámetros poblacionales desconocidos media y desviación estándar, <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a> y <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma" title="\sigma" /></a> respectivamente:
 
 
 ```R
@@ -290,19 +283,17 @@ summary(EMV2)
 
 El intervalo de confianza describe la variabilidad entre la medida obtenida en un estudio y la medida real de la población (el valor real). Corresponde a un rango de valores, cuya distribución es normal y en el cual se encuentra, con alta probabilidad, el valor real de una determinada variable.
 
-Se trata de un par de números (o varios pares de números) dentro de los cuales se estima se encuentra un parámetro desconocido $\theta$.
+Se trata de un par de números (o varios pares de números) dentro de los cuales se estima se encuentra un parámetro desconocido <a href="https://www.codecogs.com/eqnedit.php?latex=\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta" title="\theta" /></a>.
 
-Cuando la varianza $\sigma^{2}$ es conocida, el intervalo de confianza corresponde a:
+Cuando la varianza <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma^{2}" title="\sigma^{2}" /></a> es conocida, el intervalo de confianza corresponde a:
 
-$$
-I.C \rightarrow \mu \in \overline{x} \pm Z_{(1-\alpha)} \frac{S_{x}}{\sqrt{n}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=I.C&space;\rightarrow&space;\mu&space;\in&space;\overline{x}&space;\pm&space;Z_{(1-\alpha)}&space;\frac{S_{x}}{\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?I.C&space;\rightarrow&space;\mu&space;\in&space;\overline{x}&space;\pm&space;Z_{(1-\alpha)}&space;\frac{S_{x}}{\sqrt{n}}" title="I.C \rightarrow \mu \in \overline{x} \pm Z_{(1-\alpha)} \frac{S_{x}}{\sqrt{n}}" /></a>
 
 Donde
 
-* $1-\alpha$ es el nivel de confianza deseado
-* $Z_{1-\alpha}$ es el valor de la distribución normal estándar que corresponde al nivel de confianza deseado.
-* $\frac{S_{x}}{\sqrt{n}}$ es el error estándar de la media
+* <a href="https://www.codecogs.com/eqnedit.php?latex=1-\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?1-\alpha" title="1-\alpha" /></a> es el nivel de confianza deseado
+* <a href="https://www.codecogs.com/eqnedit.php?latex=Z_{1-\alpha}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Z_{1-\alpha}" title="Z_{1-\alpha}" /></a> es el valor de la distribución normal estándar que corresponde al nivel de confianza deseado.
+* <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{S_{x}}{\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{S_{x}}{\sqrt{n}}" title="\frac{S_{x}}{\sqrt{n}}" /></a> es el error estándar de la media
 
 Los niveles de confianza más comunes son:
 
@@ -490,9 +481,7 @@ t.test(mas.edades$EDAD, mu = mean(edades$EDAD))
 
 Cuando se trata de proporciones, el intervalo de confianza se estima mediante:
 
-$$
-I.C. \rightarrow \pi \in p \pm Z \sqrt{\frac{p (1 - p)}{n}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=I.C.&space;\rightarrow&space;\pi&space;\in&space;p&space;\pm&space;Z&space;\sqrt{\frac{p&space;(1&space;-&space;p)}{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?I.C.&space;\rightarrow&space;\pi&space;\in&space;p&space;\pm&space;Z&space;\sqrt{\frac{p&space;(1&space;-&space;p)}{n}}" title="I.C. \rightarrow \pi \in p \pm Z \sqrt{\frac{p (1 - p)}{n}}" /></a>
 
 
 ```R
