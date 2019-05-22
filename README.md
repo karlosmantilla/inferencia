@@ -23,11 +23,11 @@ Cuando se calcula la varianza, sí se observa una diferencia sustancial:
 
 Varianza Poblacional:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" title="\sigma^{2} = \frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma^{2}&space;=&space;\frac{\sum_{i=1}^{N}&space;\left(&space;X_{i}&space;-&space;\mu&space;\right)^{2}}{N}" title="\sigma^{2} = \frac{\sum_{i=1}^{N} \left( X_{i} - \mu \right)^{2}}{N}" /></a>
 
 Varianza Muestral
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" title="S^{2} = \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S^{2}&space;=&space;\frac{\sum_{i=1}^{n}&space;\left(&space;x_{i}&space;-&space;\overline{x}&space;\right)^{2}}{n-1}" title="S^{2} = \frac{\sum_{i=1}^{n} \left( x_{i} - \overline{x} \right)^{2}}{n-1}" /></a>
 
 ### Ejemplo
 
