@@ -15,7 +15,7 @@ La función de la media poblacional es:
 
 y la muestral es:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" title="\overline{x} = \frac{\sum_{i=1}^{n} x_{i}}{n}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\overline{x}&space;=&space;\frac{\sum_{i=1}^{n}&space;x_{i}}{n}" title="\overline{x} = \frac{\sum_{i=1}^{n} x_{i}}{n}" /></a>
 
 Básicamente, se calculan de la misma manera.
 
